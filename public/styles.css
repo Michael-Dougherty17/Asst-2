@@ -1,41 +1,41 @@
 /*Sets font for heading*/
 h1 {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Background color for web page*/
 body {
-  background: #42749E;
+    background: #42749E;
 }
 
 /*Centers wrapper*/
 .wrapper {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 /*Centers header*/
 .header {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 /*Centers text-input*/
 .inputText {
-  display: flex;
-  justify-content: center;
-  width: 300px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
 }
 
 /*Removes padding, remove bullet points, and adds bottom margin to unordered lists under flex-outer*/
 .flex-outer ul {
-  padding: 0;
-  list-style-type: none;
-  margin-bottom: 20px;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 20px;
 }
 
 
 /*Puts gradient on each restaurant block*/
 .target > li > ul {
-  background: linear-gradient(#E09E38, #EBB96C);
+    background: linear-gradient(#E09E38, #EBB96C);
 }
