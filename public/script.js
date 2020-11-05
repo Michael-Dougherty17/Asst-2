@@ -23,23 +23,27 @@ function showMatch(){
     const html = match.map(restaurants => {
         return `
         <li>
-            <span class="name">${restaurants.name}</span>
+            <ul>
+                <li>
+                    <span class="name">${restaurants.name}</span>
+                </li>
+                <li>
+                    <span class="category">${restaurants.category}</span>
+                </li>
+                <li>
+                    <span class="address">${restaurants.address_line_1}</span>
+                </li>
+                <li>
+                    <span class="address">${restaurants.address_line_2}</span>
+                </li>
+                <li>
+                    <span class="address">${restaurants.city}</span>
+                </li>     
+                <li>
+                    <span class="address">${restaurants.zip}</span>
+                </li>
+        </ul>
         </li>
-        <li>
-            <span class="category">${restaurants.category}</span>
-        </li>
-        <li>
-            <span class="address">${restaurants.address_line_1}</span>
-        </li>
-        <li>
-            <span class="address">${restaurants.address_line_2}</span>
-        </li>
-        <li>
-            <span class="address">${restaurants.city}</span>
-        </li>     
-        <li>
-            <span class="address">${restaurants.zip}</span>
-        </li> 
         `;
     }).join('');
     results.innerHTML = html;
