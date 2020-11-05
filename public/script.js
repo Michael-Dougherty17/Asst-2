@@ -46,12 +46,14 @@ function showMatch(){
         </li>
         `;
     }).join('');
-
+    
+    results.innerHTML = html;
+    //remove blank second address lines
     const regex2 = new RegExp("------", 'gi');
     editHtml = html.replace(regex2, "")
     results.innerHTML = editHtml;
 
-    results.innerHTML = html;
+    
 
 }
 
