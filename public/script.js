@@ -36,7 +36,9 @@ function showMatch() {
         </li>
         `;
     }).join('');
+    
     results.innerHTML = html;
+
     //Remove blank second address lines
     const regex2 = new RegExp("------<br>", 'gi');
     editHtml = html.replace(regex2, "")
