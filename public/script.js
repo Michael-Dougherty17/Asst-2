@@ -46,7 +46,13 @@ function showMatch(){
         </li>
         `;
     }).join('');
+
+    const regex2 = new RegExp("------", 'gi');
+    editHtml = html.replace(regex2, "")
+    results.innerHTML = editHtml;
+
     results.innerHTML = html;
+
 }
 
 const search = document.querySelector('.inputText');
