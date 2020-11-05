@@ -55,8 +55,3 @@ body {
     font-weight: bold;
     margin: 0;
 }
-
-/*Italicizes restaurant category and location information*/
-.target > li > ul > li {
-    font-style: italic;
-}
