@@ -1,8 +1,3 @@
-/*Sets font for heading*/
-h1 {
-    font-family: 'Poppins', sans-serif;
-}
-
 /*Background color for web page*/
 body {
     background: #42749E;
@@ -20,22 +15,43 @@ body {
     justify-content: center;
 }
 
-/*Centers text-input*/
-.inputText {
-    display: flex;
-    justify-content: center;
-    width: 300px;
+/*Sets font for heading h1*/
+.header > h1 {
+    color: white;
+    text-shadow: black 0px 0 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
-/*Removes padding, remove bullet points, and adds bottom margin to unordered lists under flex-outer*/
+/*Centers form*/
+.flex-outer > form {
+    display: flex;
+    justify-content: center;
+}
+
+/*Makes text input bar wider and sets font for it*/
+.inputText {
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Removes padding, removes bullet points, and sets font for unordered list items under flex-outer*/
 .flex-outer ul {
     padding: 0;
     list-style-type: none;
-    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/*Sets gradient background, padding, margin, and border-radius for each restaurant item*/
+.target > li {
+    background: linear-gradient(#E09E38, #EBC36C);
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
 
-/*Puts gradient on each restaurant block*/
-.target > li > ul {
-    background: linear-gradient(#E09E38, #EBB96C);
+/*Increases font size, bolds, and removes margin from restaurant names*/
+.target > li > ul > h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
 }
