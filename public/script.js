@@ -17,7 +17,7 @@ function findMatch(wordToMatch, restaurants) {
   });
 }
 
-//Titlecase extra credit
+//Titlecase extra creditn
 function titleCaseFunction(restaurantInfo){
     if(restaurantInfo != null) {
         splitRestaurant = restaurantInfo.toLowerCase();
