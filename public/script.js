@@ -9,10 +9,15 @@ fetch(restaurantData)
   .then((blob) => blob.json())
   .then((data) => restaurants.push(...data));
 
+//Escape special characters used in regex
+function escapeRegExp(string) {
+  return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
+}
+
 //Match user inputs
 function findMatch(wordToMatch, restaurants) {
   return restaurants.filter((business) => {
-    const regex = new RegExp(wordToMatch, "gi");
+    const regex = new RegExp(escapeRegExp(wordToMatch), 'gi');
     return business.name.match(regex) || business.category.match(regex);
   });
 }
