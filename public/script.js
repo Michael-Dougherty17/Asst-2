@@ -10,8 +10,8 @@ fetch(restaurantData)
   .then((data) => restaurants.push(...data));
 
 //Escape special characters used in regex
-function escapeRegExp(text) {
-    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+function escapeRegExp(string) {
+  return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 }
 
 //Match user inputs
